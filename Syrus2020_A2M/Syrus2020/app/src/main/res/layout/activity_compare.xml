@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompareActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_above="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ECECEC">
+
+                <ImageView
+                    android:id="@+id/layout_1_image_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#FFF"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:id="@+id/layout_1_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_below="@+id/layout_1_image_1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/layout_1_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ranking"
+                    android:layout_below="@+id/layout_1_text_1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"
+                    android:textColor="#2196F3"
+                    android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/layout_2_image_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#ECECEC"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/layout_2_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_below="@+id/layout_2_image_1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/layout_2_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ranking"
+                    android:layout_below="@+id/layout_2_text_1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"
+                    android:textColor="#2196F3"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
+</RelativeLayout>

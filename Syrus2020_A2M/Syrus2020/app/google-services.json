@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480094418342",
+    "firebase_url": "https://syrus-35b69.firebaseio.com",
+    "project_id": "syrus-35b69",
+    "storage_bucket": "syrus-35b69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480094418342:android:7e86b3f7ae1ee20ab00b67",
+        "android_client_info": {
+          "package_name": "com.anish.syrus2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480094418342-d4k1bm4pdi2ldjs26rtf0m7t70t9ts9t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anish.syrus2020",
+            "certificate_hash": "e4e75c43a357b06cefe968e4de5dc1c72456c398"
+          }
+        },
+        {
+          "client_id": "480094418342-aq5b4ieusrh1qf7akgh3m0b08h1moc35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1hY6N3BWa3HX8FTID0LZgCnlzkI_iJ_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480094418342-aq5b4ieusrh1qf7akgh3m0b08h1moc35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

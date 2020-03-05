@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicineOrderActivity">
+
+    <TextView
+        android:id="@+id/medic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="24dp"
+        android:layout_marginLeft="7dp"/>
+
+    <EditText
+        android:hint="Quantity(2,3,4)"
+        android:id="@+id/medic_quantity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/medic_name"/>
+
+    <Button
+        android:id="@+id/medic_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_below="@+id/medic_quantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

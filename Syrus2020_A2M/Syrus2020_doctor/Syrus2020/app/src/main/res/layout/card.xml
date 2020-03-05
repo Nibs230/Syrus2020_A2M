@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--
+                                <ImageView
+                                    android:layout_width="140dp"
+                                    android:layout_height="120dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="-8dp"
+                                    android:src="@drawable/police_icon" />
+
+                                -->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/user_icon"
+                        android:layout_width="140dp"
+                        android:layout_height="110dp"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/case_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Case type"
+                        android:gravity="center"
+                        android:textColor="#fdb501"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+
+
+                            <TextView
+                                android:id="@+id/case_details"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:textSize="14dp"
+                                android:textColor="#DF6A90B5"
+                                android:layout_height="wrap_content"
+                                android:text="Case Details" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="mobile"
+                                android:layout_gravity="center"
+                                android:id="@+id/mobile"/>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                 <ImageView
+                     android:layout_width="140dp"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginTop="-8dp"
+                     android:src="@drawable/food1" />
+
+
+                         </RelativeLayout>-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Case assigned to"/>
+                <TextView
+                    android:id="@+id/case_assigned"
+                    android:layout_gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#DF6A90B5"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
